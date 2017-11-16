@@ -57,8 +57,8 @@ public class Startup {
         Collection<Movie> values = map2.values();
         List<Movie> sortedList = new ArrayList<>(values);
         Collections.sort(sortedList);
-        for(Movie mov : sortedList){
-            System.out.println(mov);
+        for(Movie movie : sortedList){
+            System.out.println(movie);
         }      
         
         //Lab:4
@@ -67,7 +67,7 @@ public class Startup {
         System.out.println("");
         Collection<Movie> values2 = map2.values();
         List<Movie> sortedList2 = new ArrayList<>(values2);
-        Collections.sort(sortedList2, new SortMovieByTitle());
+        Collections.sort(sortedList2, new SortMovieByDirector());
         for(Movie mov: sortedList2){
             System.out.println(mov);
         }
@@ -83,9 +83,9 @@ public class Startup {
         set.add(m4);
         
         List<Movie> list = new ArrayList<>(set);
-        Collections.sort(list, new SortMovieByTitle());
-        for(Movie mov: set){
-            System.out.println(mov);
+        Collections.sort(list, new SortMovieByDirector());
+        for(Movie movie: set){
+            System.out.println(movie);
         }
     }
 
