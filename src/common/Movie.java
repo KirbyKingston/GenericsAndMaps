@@ -21,27 +21,27 @@ public class Movie implements Comparable {
         setMovieId(movieId);
     }
     
-    public String getTitle() {
+    public final String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public final void setTitle(String title) {
         this.title = title;
     }
 
-    public String getDirector() {
+    public final String getDirector() {
         return director;
     }
 
-    public void setDirector(String director) {
+    public final void setDirector(String director) {
         this.director = director;
     }
     
-    public String getMovieId() {
+    public final String getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(String movieId) {
+    public final void setMovieId(String movieId) {
         this.movieId = movieId;
     }
     
@@ -72,7 +72,7 @@ public class Movie implements Comparable {
 
     @Override
     public final String toString() {
-        return "Movie | Title: " + title + " | Director: " + director + " | MovieId: " + movieId;
+        return "| Title: " + title + " | Director: " + director + " | MovieId: " + movieId + "|";
     }
     
     @Override

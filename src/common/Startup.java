@@ -68,8 +68,8 @@ public class Startup {
         Collection<Movie> values2 = map2.values();
         List<Movie> sortedList2 = new ArrayList<>(values2);
         Collections.sort(sortedList2, new SortMovieByDirector());
-        for(Movie mov: sortedList2){
-            System.out.println(mov);
+        for(Movie movie: sortedList2){
+            System.out.println(movie);
         }
         
         //Lab:5
